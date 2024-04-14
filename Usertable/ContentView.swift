@@ -14,14 +14,23 @@ struct ContentView: View {
                         Member(name: "Nathalie Axelsson", email: "test2@test.se", imageLink: "computer"),]
     
     var body: some View {
-        VStack {
-            List () {
-                //Skapa en list VIEW
-                //Extract subview som en egen view för bättre överesikt
-                ForEach(myMemberList) { member in
-                    RowView(member: member)
+        NavigationStack {
+            VStack {
+                List () {
+                    //Skapa en list VIEW
+                    //Extract subview som en egen view för bättre överesikt
+                    ForEach(myMemberList) { member in
+                        NavigationLink(destination: MemberView()) {
+                                                       
+                            RowView(member: member)
+                        }
+                    }
                 }
             }
+            .navigationTitle("Members List")
+            .navigationBarItems(trailing: NavigationLink(destination: MemberView()) {
+                Image(systemName: "plus")
+            })
         }
     }
 }

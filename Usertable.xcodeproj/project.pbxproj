@@ -15,6 +15,7 @@
 		CD49D2C02BCC5936008892CB /* UsertableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49D2BF2BCC5936008892CB /* UsertableUITests.swift */; };
 		CD49D2C22BCC5936008892CB /* UsertableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49D2C12BCC5936008892CB /* UsertableUITestsLaunchTests.swift */; };
 		CD49D2D02BCC63E7008892CB /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49D2CF2BCC63E7008892CB /* Member.swift */; };
+		CD49D2D32BCC723B008892CB /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49D2D22BCC723B008892CB /* MemberView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		CD49D2BF2BCC5936008892CB /* UsertableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsertableUITests.swift; sourceTree = "<group>"; };
 		CD49D2C12BCC5936008892CB /* UsertableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsertableUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CD49D2CF2BCC63E7008892CB /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		CD49D2D22BCC723B008892CB /* MemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		CD49D2A32BCC5933008892CB /* Usertable */ = {
 			isa = PBXGroup;
 			children = (
+				CD49D2D12BCC7229008892CB /* View */,
 				CD49D2CE2BCC63B8008892CB /* Model */,
 				CD49D2A42BCC5933008892CB /* UsertableApp.swift */,
 				CD49D2A62BCC5933008892CB /* ContentView.swift */,
@@ -136,6 +139,14 @@
 				CD49D2CF2BCC63E7008892CB /* Member.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CD49D2D12BCC7229008892CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD49D2D22BCC723B008892CB /* MemberView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 			files = (
 				CD49D2A72BCC5933008892CB /* ContentView.swift in Sources */,
 				CD49D2D02BCC63E7008892CB /* Member.swift in Sources */,
+				CD49D2D32BCC723B008892CB /* MemberView.swift in Sources */,
 				CD49D2A52BCC5933008892CB /* UsertableApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
