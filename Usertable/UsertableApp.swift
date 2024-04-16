@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct UsertableApp: App {
+    
+    @StateObject var myMemberList = MemberListViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(myMemberList)
         }
     }
 }

@@ -9,9 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var myMemberList = [Member(name: "Mattias Axelsson", email: "test@test.se", imageLink: "mattias"),
-                        Member(name: "Elliot Axelsson", email: "test3@test.se", imageLink: "computer"),
-                        Member(name: "Nathalie Axelsson", email: "test2@test.se", imageLink: "computer"),]
+    @EnvironmentObject var myMemberList : MemberListViewModel
     
     var body: some View {
         NavigationStack {
@@ -19,8 +17,8 @@ struct ContentView: View {
                 List () {
                     //Skapa en list VIEW
                     //Extract subview som en egen view för bättre överesikt
-                    ForEach(myMemberList) { member in
-                        NavigationLink(destination: MemberView()) {
+                    ForEach(myMemberList.myMemberList) { member in
+                        NavigationLink(destination: MemberView(member: member)) {
                                                        
                             RowView(member: member)
                         }

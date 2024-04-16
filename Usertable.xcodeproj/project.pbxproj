@@ -16,6 +16,7 @@
 		CD49D2C22BCC5936008892CB /* UsertableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49D2C12BCC5936008892CB /* UsertableUITestsLaunchTests.swift */; };
 		CD49D2D02BCC63E7008892CB /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49D2CF2BCC63E7008892CB /* Member.swift */; };
 		CD49D2D32BCC723B008892CB /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49D2D22BCC723B008892CB /* MemberView.swift */; };
+		CD49D2D52BCD0573008892CB /* MemberListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD49D2D42BCD0572008892CB /* MemberListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		CD49D2C12BCC5936008892CB /* UsertableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsertableUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CD49D2CF2BCC63E7008892CB /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		CD49D2D22BCC723B008892CB /* MemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
+		CD49D2D42BCD0572008892CB /* MemberListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				CD49D2CF2BCC63E7008892CB /* Member.swift */,
+				CD49D2D42BCD0572008892CB /* MemberListViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			files = (
 				CD49D2A72BCC5933008892CB /* ContentView.swift in Sources */,
 				CD49D2D02BCC63E7008892CB /* Member.swift in Sources */,
+				CD49D2D52BCD0573008892CB /* MemberListViewModel.swift in Sources */,
 				CD49D2D32BCC723B008892CB /* MemberView.swift in Sources */,
 				CD49D2A52BCC5933008892CB /* UsertableApp.swift in Sources */,
 			);

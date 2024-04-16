@@ -7,7 +7,13 @@
 
 import Foundation
 
-class Member : Identifiable {
+class Member : Identifiable, Equatable {
+    
+    //detta måste man ha med, men varför? Annars ej equatble?
+    static func == (lhs: Member, rhs: Member) -> Bool {
+        return true
+    }
+    
     
 //    var id = UUID()
     
